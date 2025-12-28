@@ -1,0 +1,85 @@
+.home-container {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* dark overlay */
+  position: relative;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.home-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* BUTTON CONTAINER */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 🔥 THIS ADDS SPACE */
+}
+
+/* BASE BUTTON */
+.btn {
+  padding: 18px 42px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* START BUTTON */
+.start-btn {
+  background: linear-gradient(to right, #ffe600, #ffe600);
+}
+
+.start-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #001aff, 0 0 30px #001aff;
+}
+
+/* ABOUT BUTTON */
+.about-btn {
+  background: linear-gradient(to right, #001aff, #001aff);
+}
+
+.about-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #ffe600, 0 0 30px #ffe600;
+}

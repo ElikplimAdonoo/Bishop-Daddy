@@ -1,0 +1,42 @@
+.instructions-container {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+}
+
+.instructions-text {
+  max-width: 800px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.play-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background: #ffe600;
+  border: none;
+  cursor: pointer;
+}
+/* START BUTTON */
+.start-btn {
+  background: linear-gradient(to right, #ffe600, #ffe600);
+}
+
+.start-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #001aff, 0 0 30px #001aff;
+}
